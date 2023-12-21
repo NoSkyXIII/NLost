@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 public class ShopPanel : MonoBehaviour
 {
@@ -30,7 +29,6 @@ public class ShopPanel : MonoBehaviour
 
     private void Sell()
     {
-        Debug.Log($"Sold: {_choosenCount} on sum {_cost}");
         SellPresed?.Invoke((_item.ID).ToString(), _choosenCount, _cost);
     }
 }
